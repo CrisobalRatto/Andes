@@ -1,0 +1,45 @@
+{{ if .Site.Data.homepage.intro.enable }}
+<section
+  class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down"
+>
+
+  <div class="rad-showcase__bg">
+    <img
+   
+    class="lol"
+    src="img\intro\letter.png"
+    data-src="{{ .Site.Data.homepage.letter.letters.x | absURL }}"
+    data-srcset="{{ .Site.Data.homepage.letter.letters.x | absURL }} 1x, {{ .Site.Data.homepage.letters.image._2x | absURL }} 2x"
+    alt="{{ .Site.Data.homepage.letter.letters.alt }}"
+    /> 
+    <img
+      class="lozad img-responsive"
+      src="img\intro\bgintro@0.5x.png"
+      data-src="{{ .Site.Data.homepage.intro.image.x | absURL }}"
+      data-srcset="{{ .Site.Data.homepage.intro.image.x | absURL }} 1x, {{ .Site.Data.homepage.intro.image._2x | absURL }} 2x"
+      alt="{{ .Site.Data.homepage.intro.image.alt }}"
+    />
+    <img class="clouds" src="img\intro\cloud1.png" style="--i: 1" />
+    <img class="clouds" src="img\intro\cloud2.png" style="--i: 2" />
+    <img class="clouds" src="img\intro\cloud1.png" style="--i: 3" />
+    <img class="clouds" src="img\intro\cloud1.png" style="--i: 4" />
+    <img class="clouds" src="img\intro\cloud1.png" style="--i: 5" />
+    <img class="Letter" src="img\intro\cloud1.png" style="--i: 5" />
+  
+ 
+  
+</div>
+
+
+
+ <!--  <div class="rad-showcase__bg rad-showcase__bg--mobile">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="{{ .Site.Data.homepage.showcase.imageMobile.x | absURL }}"
+      alt="{{ .Site.Data.homepage.showcase.imageMobile.alt }}"
+    />
+  </div> -->
+</section>
+
+{{ end }}
